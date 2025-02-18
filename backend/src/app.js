@@ -15,4 +15,7 @@ app.get('/',(req,res) => {
     res.send('Welcome to my API')
 })
 
+//route for API users
+app.use('/api/users',require('./routes/users'))
+
 module.exports = app //export app

@@ -6,9 +6,9 @@ const userSchema = new Schema({
     age: Number,
     phone: Number,
     email: String,
-})
+},
 {
     timestamps: true
-}
+})
 
 module.exports = model('User', userSchema)

@@ -17,7 +17,7 @@ userCtrl.createUser = async (req,res) => {
         email: email
     })
     await newUser.save()
-    res.json({message: 'User created'})
+    res.json({message: 'User created', newUser})
 }
 
 userCtrl.getUser = async (req,res) => {
